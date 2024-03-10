@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9428fd4c-9c1d-4810-9c5d-be6b8e98f752" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BankAccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BankAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DepositRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TransferRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WithdrawRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="9428fd4c-9c1d-4810-9c5d-be6b8e98f752" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BankAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/BankAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BankAccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +55,14 @@
       <option name="presentableId" value="Default" />
       <updated>1709825952472</updated>
     </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1709833625724</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709833625724</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +75,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
