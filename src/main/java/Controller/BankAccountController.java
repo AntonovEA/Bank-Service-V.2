@@ -1,8 +1,12 @@
 package Controller;
 
+import lombok.AllArgsConstructor;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/account")
@@ -10,7 +14,34 @@ public class BankAccountController {
 
     private int balance;
     private boolean success;
-    private ArrayList operationsList;
+    private List<String> operationsList;
+
+    private final DatabaseService databaseService; // Сервис для работы с базой данных
+
+    @Autowired
+    public BankAccountController(DatabaseService databaseService) {
+        this.databaseService = databaseService;
+    }
+
+    @GetMapping("/balance/{userId}")
+    public int getBalance(@PathVariable int userId) {
+        if (balance == 0) {
+            // Получаем баланс из базы данных при первом обращении
+            balance = databaseService.getBalanceForUser(userId);
+        }
+        return balance;
+    }
+
+    @GetMapping("/operationsList/{userId}")
+    public List<String> getOperationsList(@PathVariable int userId) {
+        if (operationsList == null) {
+            // Получаем список операций из базы данных при первом обращении
+            operationsList = databaseService.getOperationsForUser(userId);
+        }
+        return operationsList;
+    }
+    public BankAccountController() {
+    }
 
     @GetMapping("/balance/{userId}")
     public String getBalance(@PathVariable int userId) {
